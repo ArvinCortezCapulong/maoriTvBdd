@@ -24,11 +24,11 @@ module.exports = {
     format: [
       "progress",
       "summary",
-      "allure-cucumberjs:reports/allure-results"
+      // "allure-cucumberjs:reports/allure-results"
     ],
     publishQuiet: true,
-    parallel: 2,
-    timeout: 60000,
+    parallel: 1,
+    timeout: 30000,
     worldParameters: {
       baseURL: process.env.BASE_URL || "https://www.maoriplus.co.nz/"
     }

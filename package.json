@@ -4,7 +4,7 @@
   "description": "\"# maoriTvBdd\"",
   "main": "cucumber.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "pw:install": "playwright install",
     "test:pw": "npx playwright test",
     "test:bdd": "cucumber-js --config cucumber.js",
@@ -18,7 +18,8 @@
     "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.5.2",
-    "allure-cucumberjs": "^3.4.1",
+    "@wdio/allure-reporter": "^9.19.2",
+    "allure-commandline": "^2.34.1",
     "chai": "^6.0.1",
     "dotenv": "^17.2.2",
     "playwright": "^1.55.1",
