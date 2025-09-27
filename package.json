@@ -1,0 +1,28 @@
+{
+  "name": "maoritvbdd",
+  "version": "1.0.0",
+  "description": "\"# maoriTvBdd\"",
+  "main": "cucumber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "pw:install": "playwright install",
+    "test:pw": "npx playwright test",
+    "test:bdd": "cucumber-js --config cucumber.js",
+    "test:bdd:headed": "HEADED=1 cucumber-js --config cucumber.js",
+    "report:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "report:open": "allure open reports/allure-report"
+  },
+  "author": "arvinCortezCapulong",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "allure-cucumberjs": "^3.4.1",
+    "chai": "^6.0.1",
+    "dotenv": "^17.2.2",
+    "playwright": "^1.55.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
