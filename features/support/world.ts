@@ -40,7 +40,9 @@ setWorldConstructor(CustomWorld);
 // npm run test:bdd:headed
 
 // # Windows
-// set HEADED=1 && npx cucumber-js
+// set HEADED=1 && npx cucumber-js executing test
 
 // # Or use your package.json script
-// npm run test:bdd:headed
+// npm run test:bdd:headed executing test
+
+// npx cucumber-js --dry-run  executing test
